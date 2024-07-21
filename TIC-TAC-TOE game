@@ -1,0 +1,17 @@
+def nextMove(player, board):
+    # Check for an empty spot and return the coordinates
+    for r in range(3):
+        for c in range(3):
+            if board[r][c] == '_':
+                print(f"{r} {c}")
+                return
+
+# Example usage:
+player = 'X'  # Current player
+board = [
+    ['X', 'O', 'X'],
+    ['O', 'X', 'O'],
+    ['_', '_', '_']
+]
+
+nextMove(player, board)
